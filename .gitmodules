@@ -1,0 +1,3 @@
+[submodule "mcl-framework/mcl"]
+	path = mcl-framework/mcl
+	url = https://github.com/herumi/mcl.git
