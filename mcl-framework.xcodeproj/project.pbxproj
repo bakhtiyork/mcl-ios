@@ -10,6 +10,8 @@
 		EC4FF3BB2753BFCE005DBB0C /* mcl_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FF3B12753BFCE005DBB0C /* mcl_framework.framework */; };
 		EC4FF3C02753BFCE005DBB0C /* mcl_frameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4FF3BF2753BFCE005DBB0C /* mcl_frameworkTests.m */; };
 		EC4FF3C22753BFCE005DBB0C /* mcl_framework.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4FF3B42753BFCE005DBB0C /* mcl_framework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC4FF3CE2753C2A6005DBB0C /* libmcl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FF3CC2753C2A6005DBB0C /* libmcl.a */; };
+		EC4FF3CF2753C2A6005DBB0C /* libmclbn256.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FF3CD2753C2A6005DBB0C /* libmclbn256.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		EC4FF3BA2753BFCE005DBB0C /* mcl-frameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mcl-frameworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4FF3BF2753BFCE005DBB0C /* mcl_frameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mcl_frameworkTests.m; sourceTree = "<group>"; };
 		EC4FF3C12753BFCE005DBB0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC4FF3CC2753C2A6005DBB0C /* libmcl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmcl.a; sourceTree = "<group>"; };
+		EC4FF3CD2753C2A6005DBB0C /* libmclbn256.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmclbn256.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4FF3CF2753C2A6005DBB0C /* libmclbn256.a in Frameworks */,
+				EC4FF3CE2753C2A6005DBB0C /* libmcl.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +79,7 @@
 			children = (
 				EC4FF3B42753BFCE005DBB0C /* mcl_framework.h */,
 				EC4FF3B52753BFCE005DBB0C /* Info.plist */,
+				EC4FF3CB2753C00B005DBB0C /* Libs */,
 			);
 			path = "mcl-framework";
 			sourceTree = "<group>";
@@ -84,6 +91,15 @@
 				EC4FF3C12753BFCE005DBB0C /* Info.plist */,
 			);
 			path = "mcl-frameworkTests";
+			sourceTree = "<group>";
+		};
+		EC4FF3CB2753C00B005DBB0C /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				EC4FF3CC2753C2A6005DBB0C /* libmcl.a */,
+				EC4FF3CD2753C2A6005DBB0C /* libmclbn256.a */,
+			);
+			path = Libs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +365,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mcl-framework/Libs",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bakhtiyor.mcl-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -371,6 +391,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mcl-framework/Libs",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bakhtiyor.mcl-framework";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
