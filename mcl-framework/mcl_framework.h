@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#include "BN256.h"
 
 //! Project version number for mcl_framework.
 FOUNDATION_EXPORT double mcl_frameworkVersionNumber;
