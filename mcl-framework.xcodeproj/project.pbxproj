@@ -14,6 +14,8 @@
 		EC4FF3CF2753C2A6005DBB0C /* libmclbn256.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4FF3CD2753C2A6005DBB0C /* libmclbn256.a */; };
 		EC4FF3D22753CB2A005DBB0C /* BN256.h in Headers */ = {isa = PBXBuildFile; fileRef = EC4FF3D02753CB2A005DBB0C /* BN256.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC4FF3D32753CB2A005DBB0C /* BN256.mm in Sources */ = {isa = PBXBuildFile; fileRef = EC4FF3D12753CB2A005DBB0C /* BN256.mm */; };
+		EC6E934927AEB20E00B50401 /* mcl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E934827AEB20E00B50401 /* mcl.swift */; };
+		EC6E934B27AEB28C00B50401 /* mcl_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6E934A27AEB28C00B50401 /* mcl_test.swift */; };
 		EC8FC18A2781D3D100842083 /* HashToField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FC1892781D3D100842083 /* HashToField.swift */; };
 		EC8FC18D2781FDA900842083 /* CryptoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8FC18C2781FDA900842083 /* CryptoKit.framework */; };
 		EC8FC18F27832E1B00842083 /* HashToFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FC18E27832E1B00842083 /* HashToFieldTests.swift */; };
@@ -42,6 +44,8 @@
 		EC4FF3CD2753C2A6005DBB0C /* libmclbn256.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmclbn256.a; sourceTree = "<group>"; };
 		EC4FF3D02753CB2A005DBB0C /* BN256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BN256.h; sourceTree = "<group>"; };
 		EC4FF3D12753CB2A005DBB0C /* BN256.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BN256.mm; sourceTree = "<group>"; };
+		EC6E934827AEB20E00B50401 /* mcl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcl.swift; sourceTree = "<group>"; };
+		EC6E934A27AEB28C00B50401 /* mcl_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mcl_test.swift; sourceTree = "<group>"; };
 		EC8FC1892781D3D100842083 /* HashToField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashToField.swift; sourceTree = "<group>"; };
 		EC8FC18C2781FDA900842083 /* CryptoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CryptoKit.framework; sourceTree = DEVELOPER_DIR; };
 		EC8FC18E27832E1B00842083 /* HashToFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashToFieldTests.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 				EC4FF3D02753CB2A005DBB0C /* BN256.h */,
 				EC4FF3D12753CB2A005DBB0C /* BN256.mm */,
 				EC8FC1892781D3D100842083 /* HashToField.swift */,
+				EC6E934827AEB20E00B50401 /* mcl.swift */,
 			);
 			path = "mcl-framework";
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 				ECC5284C275DC9AF00D60322 /* MCLFrameworkTest.swift */,
 				ECC5284B275DC9AE00D60322 /* mcl-frameworkTests-Bridging-Header.h */,
 				EC8FC18E27832E1B00842083 /* HashToFieldTests.swift */,
+				EC6E934A27AEB28C00B50401 /* mcl_test.swift */,
 			);
 			path = "mcl-frameworkTests";
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6E934927AEB20E00B50401 /* mcl.swift in Sources */,
 				EC4FF3D32753CB2A005DBB0C /* BN256.mm in Sources */,
 				EC8FC18A2781D3D100842083 /* HashToField.swift in Sources */,
 			);
@@ -258,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6E934B27AEB28C00B50401 /* mcl_test.swift in Sources */,
 				EC8FC18F27832E1B00842083 /* HashToFieldTests.swift in Sources */,
 				EC4FF3C02753BFCE005DBB0C /* mcl_frameworkTests.m in Sources */,
 				ECC5284D275DC9AF00D60322 /* MCLFrameworkTest.swift in Sources */,
